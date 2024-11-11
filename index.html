@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <main>
+        <h1>Photo Gallery</h1>
+        
+        <figure>
+            <!-- Featured image, initially the first large image -->
+            <img id="featured-image" src="images/flowers-pink-large.jpg" alt="Pink Flowers">
+            <figcaption id="image-caption">Pink Flowers</figcaption>
+        </figure>
+        
+        <!-- Thumbnails will be dynamically added here -->
+        <ul id="thumbnail-gallery"></ul>
+    </main>
+
+    <!-- Modal for full-screen view -->
+    <div id="modal" class="modal">
+        <span id="close-modal" class="close">&times;</span>
+        <img id="modal-image" class="modal-content" src="" alt="">
+        <div id="prev" class="nav-button">&#10094;</div>
+        <div id="next" class="nav-button">&#10095;</div>
+    </div>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html>
